@@ -11,8 +11,20 @@
   "bin": {
     "weather": "./build/index.js"
   },
-  "keywords": ["weather", "mcp", "server"],
+  "keywords": [
+    "weather",
+    "mcp",
+    "server"
+  ],
   "author": "Attila Csanyi-Doe",
   "license": "ISC",
-  "description": "A weather MCP server"
+  "description": "A weather MCP server",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.20.1",
+    "zod": "3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "24.8.1",
+    "typescript": "5.9.3"
+  }
 }
