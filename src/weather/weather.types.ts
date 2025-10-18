@@ -8,7 +8,7 @@ export type AlertFeature = {
   };
 };
 
-type ForecastPeriod = {
+export type ForecastPeriod = {
   name?: string;
   temperature?: number;
   temperatureUnit?: string;
@@ -17,17 +17,17 @@ type ForecastPeriod = {
   shortForecast?: string;
 };
 
-type AlertsResponse = {
+export type AlertsResponse = {
   features: AlertFeature[];
 };
 
-type PointsResponse = {
+export type PointsResponse = {
   properties: {
     forecast?: string;
   };
 };
 
-type ForecastResponse = {
+export type ForecastResponse = {
   properties: {
     periods: ForecastPeriod[];
   };

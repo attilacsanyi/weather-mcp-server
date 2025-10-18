@@ -5,7 +5,7 @@ import { AlertFeature } from './weather.types.js';
  * @param feature - The alert feature
  * @returns The formatted alert data
  */
-const formatAlert = (feature: AlertFeature): string => {
+export const formatAlert = (feature: AlertFeature): string => {
   const props = feature.properties;
   return [
     `Event: ${props.event || 'Unknown'}`,
